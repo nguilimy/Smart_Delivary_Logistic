@@ -25,7 +25,7 @@ const VehiclesScreen = () => {
       <StatusBar barStyle="light-content" translucent backgroundColor="transparent" />
       <View style={[styles.headerSection, { paddingTop: insets.top + 16, backgroundColor: themeColors.primary }]}>
         <View style={styles.headerRow}>
-          <Text style={styles.title}>My Vehicles</Text>
+          <Text style={styles.title}>Fleet Management</Text>
           <TouchableOpacity style={styles.addBtn} onPress={handleAddVehicle}>
             <Ionicons name="add" size={24} color={colors.white} />
           </TouchableOpacity>

@@ -31,7 +31,7 @@ const DashboardScreen = ({ navigation }: any) => {
             </Text>
             <Text style={styles.headerSubtitle}>Ready for your next delivery?</Text>
           </View>
-          <TouchableOpacity style={styles.notificationBtn}>
+          <TouchableOpacity style={styles.notificationBtn} onPress={() => navigation.navigate('Alerts')}>
             <Ionicons name="notifications-outline" size={24} color={colors.white} />
             <View style={[styles.badge, { borderColor: themeColors.primary }]} />
           </TouchableOpacity>
@@ -84,7 +84,7 @@ const DashboardScreen = ({ navigation }: any) => {
             icon="truck-plus"
             label="Fleet"
             color={colors.success}
-            onPress={() => {}}
+            onPress={() => navigation.navigate('Fleet')}
           />
           <QuickAction
             icon="alert-octagon"

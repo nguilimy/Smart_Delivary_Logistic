@@ -64,13 +64,13 @@ const MainTabs = () => {
           if (focused) {
             if (route.name === 'Dashboard') iconName = 'grid';
             else if (route.name === 'Shipments') iconName = 'cube';
-            else if (route.name === 'Vehicles') iconName = 'car';
+            else if (route.name === 'Fleet') iconName = 'car';
             else if (route.name === 'Alerts') iconName = 'notifications';
             else if (route.name === 'Profile') iconName = 'person';
           } else {
             if (route.name === 'Dashboard') iconName = 'grid-outline';
             else if (route.name === 'Shipments') iconName = 'cube-outline';
-            else if (route.name === 'Vehicles') iconName = 'car-outline';
+            else if (route.name === 'Fleet') iconName = 'car-outline';
             else if (route.name === 'Alerts') iconName = 'notifications-outline';
             else if (route.name === 'Profile') iconName = 'person-outline';
           }
@@ -120,7 +120,7 @@ const MainTabs = () => {
     >
       <Tab.Screen name="Dashboard" component={DashboardScreen} />
       <Tab.Screen name="Shipments" component={ShipmentStack} />
-      <Tab.Screen name="Vehicles" component={VehiclesScreen} />
+      <Tab.Screen name="Fleet" component={VehiclesScreen} />
       <Tab.Screen name="Alerts" component={AlertsScreen} />
       <Tab.Screen name="Profile" component={ProfileStack} />
     </Tab.Navigator>
